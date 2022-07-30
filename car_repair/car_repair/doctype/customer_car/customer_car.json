@@ -1,0 +1,234 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "[police_name]",
+ "creation": "2022-06-09 21:34:57.950391",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "name_of_the_owner",
+  "customer",
+  "customer_driver",
+  "car_data_section",
+  "police_number",
+  "chassis_number",
+  "machine_number",
+  "car_link",
+  "car_type",
+  "car_capacity",
+  "car_category",
+  "car_variant",
+  "year_of_the_car",
+  "car_colour",
+  "car_insurance",
+  "insurance_number",
+  "fuel_type",
+  "made_in",
+  "transmisi_type",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "code",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "name_of_the_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name of the owner",
+   "options": "Name of the owner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_driver",
+   "fieldtype": "Link",
+   "label": "Customer Driver",
+   "options": "Customer Driver"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "car_data_section",
+   "fieldtype": "Section Break",
+   "label": "Car Data"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "police_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Police Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "chassis_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Chassis Number",
+   "search_index": 1
+  },
+  {
+   "fieldname": "machine_number",
+   "fieldtype": "Data",
+   "label": "Machine Number"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "car_link",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Car Brand",
+   "options": "Car Brand"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "car_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Car Type",
+   "options": "Car Type"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "car_capacity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Car Capacity",
+   "options": "Car Capacity"
+  },
+  {
+   "fieldname": "car_category",
+   "fieldtype": "Link",
+   "label": "Car Category",
+   "options": "Car Category"
+  },
+  {
+   "fieldname": "car_variant",
+   "fieldtype": "Link",
+   "label": "Car Variant",
+   "options": "Car Variant"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "year_of_the_car",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Year of the car",
+   "options": "Year of the car"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "car_colour",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Car Colour",
+   "options": "Car Colour"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "car_insurance",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Car Insurance",
+   "options": "Car Insurance"
+  },
+  {
+   "fieldname": "insurance_number",
+   "fieldtype": "Data",
+   "label": "Insurance Number"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Petrol\nDiesel\nNatural Gas\nElectric\nPertamax Racing\nPertamax Turbo\nPertamax\nPertalite\nPremium\nPertamina Dex\nDexlite"
+  },
+  {
+   "fieldname": "made_in",
+   "fieldtype": "Link",
+   "label": "Made in",
+   "options": "Country"
+  },
+  {
+   "fieldname": "transmisi_type",
+   "fieldtype": "Select",
+   "label": "Transmisi Type",
+   "options": "Manual\nAutomatic"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "modified": "2022-07-30 08:34:19.933281",
+ "modified_by": "Administrator",
+ "module": "Car Repair",
+ "name": "Customer Car",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounting",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "police_number",
+ "track_changes": 1,
+ "track_seen": 1
+}

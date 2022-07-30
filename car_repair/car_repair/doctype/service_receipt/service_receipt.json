@@ -1,0 +1,59 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "creation": "2022-06-10 07:54:51.217235",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_in",
+  "customer_car",
+  "kilometers_in",
+  "kilometers_out"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_in",
+   "fieldtype": "Datetime",
+   "label": "Date In"
+  },
+  {
+   "fieldname": "customer_car",
+   "fieldtype": "Link",
+   "label": "Customer Car",
+   "options": "Customer Car"
+  },
+  {
+   "fieldname": "kilometers_in",
+   "fieldtype": "Data",
+   "label": "Kilometers In"
+  },
+  {
+   "fieldname": "kilometers_out",
+   "fieldtype": "Data",
+   "label": "Kilometers Out"
+  }
+ ],
+ "modified": "2022-07-30 08:34:19.575937",
+ "modified_by": "Administrator",
+ "module": "Car Repair",
+ "name": "Service Receipt",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
